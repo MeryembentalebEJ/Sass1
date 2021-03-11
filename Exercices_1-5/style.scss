@@ -1,0 +1,44 @@
+$firstColor: green;
+$lightColor: coral;
+$myFont: Helvetica, sans-serif;
+$myWidth: 100%;
+// exo 1
+.titre{
+    background-color: $firstColor;
+}
+
+@mixin important-text {
+    color: gray;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue; 
+    font-family: $myFont;
+  }
+  p{
+      @include important-text;
+      background-color: peachpuff;
+  }
+//   exo 2
+  @mixin meryem {
+      background-color: peachpuff;
+      text-decoration: underline;
+      border: 4px solid black;
+      color: darkgreen;
+  }
+  .titre{
+      @include meryem;
+
+  }
+// exo 3
+
+
+// exo4 et 5
+div{
+    li{
+        text-decoration: underline;
+        line-height: 30px;
+    }
+    li:hover{
+        background-color: $lightColor;
+    }
+}
